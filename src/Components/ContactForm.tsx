@@ -1,9 +1,47 @@
 import React, { useState } from 'react';
+import axios from 'axios';
 
 function ContactForm() {
-  const [name, setName] = useState('');
-  const [email, setEmail] = useState('');
-  const [message, setMessage] = useState('');
+  const [state, setState] = useState({
+    name: '',
+    email: '',
+    message: '',
+  });
+  const [result, setResult] = useState({ success: false, message: '' });
+
+  const sendEmail = async (event: React.SyntheticEvent) => {
+    event.preventDefault();
+
+    console.log('submitted');
+    await axios
+      .post('/send', { ...state })
+      .then((response) => {
+        console.log(response);
+        setResult({
+          success: true,
+          message: response.data,
+        });
+        setState({
+          name: '',
+          email: '',
+          message: '',
+        });
+      })
+      .catch(() => {
+        setResult({
+          success: false,
+          message: 'Something went wrong. Try again later',
+        });
+      });
+  };
+
+  const onInputChange = (event: any) => {
+    const { name, value } = event.currentTarget;
+    setState({
+      ...state,
+      [name]: value,
+    });
+  };
 
   return (
     <div className="container mx-auto px-4 border-2 border-black rounded">
@@ -11,7 +49,9 @@ function ContactForm() {
         <h2 className="section-heading">Want to get in touch?</h2>
       </div>
       <div className="contact-form-container">
-        <form className="contact-form" id="contactForm" action="#">
+        <p>{result.message}</p>
+
+        <form className="contact-form" id="contactForm" onSubmit={sendEmail}>
           <div className="main-form-container">
             <div className="left-container">
               <div className="form-group">
@@ -22,9 +62,10 @@ function ContactForm() {
                   type="text"
                   name="name"
                   className="form-control"
-                  value={name}
+                  value={state.name}
                   id="name"
                   placeholder="Enter your name"
+                  onChange={onInputChange}
                   required
                 />
               </div>
@@ -35,8 +76,9 @@ function ContactForm() {
                 <input
                   type="email"
                   name="email"
-                  value={email}
-                  className="form-control"
+                  value={state.email}
+                  //   className="form-control"
+                  onChange={onInputChange}
                   id="email"
                   placeholder="Enter your email"
                   required
@@ -52,12 +94,18 @@ function ContactForm() {
                   className="form-control"
                   id="message"
                   name="message"
-                  value={message}
+                  value={state.message}
+                  onChange={onInputChange}
                   placeholder="Enter your message"
                   required
                 ></textarea>
               </div>
             </div>
+          </div>
+          <div className="bottom-container">
+            <button className="border-1 border-black rounded" type="submit">
+              Submit
+            </button>
           </div>
         </form>
       </div>
