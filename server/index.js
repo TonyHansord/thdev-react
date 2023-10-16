@@ -1,11 +1,13 @@
 const path = require('path');
 const express = require('express');
 const transporter = require('./config');
+const cors = require('cors');
 const dotenv = require('dotenv');
 dotenv.config();
 const app = express();
 
 const buildPath = path.join(__dirname, '..', 'build');
+app.use(cors());
 app.use(express.json());
 app.use(express.static(buildPath));
 
@@ -38,20 +40,12 @@ function sendEmail({ email, name, message }) {
 
 app.post('/send', (req, res) => {
   console.log(req);
-  try {
-    sendEmail(req.body)
-      .then((response) => {
-        console.log(response);
-        res.send(response.message);
-      })
-
-      .catch((error) => res.status(500).send(error.message));
-  } catch (error) {
-    res.status(500).send({
-      success: false,
-      message: 'Something went wrong. Try again later',
-    });
-  }
+  sendEmail(req.body)
+    .then((response) => {
+      console.log(response);
+      res.send(response.message);
+    })
+    .catch((error) => res.status(500).send(error.message));
 });
 
 app.listen(3000, () => {
