@@ -80,6 +80,7 @@ h3 {
   font-size: 2rem;
 }
 
+
 .light-section {
   background-color: var(--dark-secondary);
   color: var(--light-primary);
@@ -197,11 +198,18 @@ h3 {
   color: var(--dark-accent);
 }
 
-.tech-skills::before {
+.icon {
+  color: var(--light-primary);
+  font-size: 1rem;
+  padding-right: 20px;
+  width: 1rem;
+}
+
+/* .tech-skills::before {
   content: '>';
   padding-right: 10px;
   color: var(--light-primary);
-}
+} */
 
 /* Work Section */
 

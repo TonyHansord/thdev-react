@@ -75,3 +75,58 @@ export const projects = {
     },
   ],
 };
+
+export const skills = [
+  {
+    name: 'HTML',
+    icon: 'fab fa-html5',
+  },
+  {
+    name: 'CSS',
+    icon: 'fab fa-css3-alt',
+  },
+  {
+    name: 'JavaScript / TypeScript',
+    icon: 'fab fa-js-square',
+  },
+  {
+    name: 'React',
+    icon: 'fab fa-react',
+  },
+  {
+    name: 'Ruby on Rails',
+    icon: 'fas fa-gem',
+  },
+  {
+    name: 'PostgreSQL',
+    icon: 'fas fa-database',
+  },
+  {
+    name: 'Bootstrap',
+    icon: 'fab fa-bootstrap',
+  },
+  {
+    name: 'Sass',
+    icon: 'fab fa-sass',
+  },
+  {
+    name: 'Git',
+    icon: 'fab fa-git-alt',
+  },
+  {
+    name: 'GitHub',
+    icon: 'fab fa-github',
+  },
+  {
+    name: 'Figma',
+    icon: 'fab fa-figma',
+  },
+  {
+    name: 'Firebase',
+    icon: 'fas fa-fire',
+  },
+  {
+    name: 'Swift',
+    icon: 'fab fa-swift',
+  }
+];
