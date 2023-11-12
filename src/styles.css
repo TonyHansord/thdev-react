@@ -292,19 +292,32 @@ h3 {
   cursor: pointer;
 }
 
-.card:hover {
+/* .card:hover {
   top: -8px;
-}
+} */
 
 .grid.other .card-content {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
+  position: relative;
   gap: 1rem;
   height: 100%;
   width: 100%;
   padding: 2rem;
   font-weight: 300;
+}
+
+.grid.other .turn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.grid.other img {
+  /* width: 300px;
+  height: 150px; */
+  object-fit: cover;
 }
 
 .type-desc {

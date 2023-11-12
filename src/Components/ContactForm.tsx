@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import axios from 'axios';
 
 function ContactForm() {
   const [state, setState] = useState({
@@ -13,13 +12,22 @@ function ContactForm() {
     event.preventDefault();
 
     console.log('submitted');
-    await axios
-      .post('/send', { ...state })
-      .then((response) => {
-        console.log(response);
+    await fetch('/send', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({
+        name: state.name,
+        email: state.email,
+        message: state.message,
+      }),
+    })
+      .then((res) => res.json())
+      .then((data) => {
         setResult({
           success: true,
-          message: response.data,
+          message: data,
         });
         setState({
           name: '',

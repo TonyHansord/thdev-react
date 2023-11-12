@@ -1,5 +1,5 @@
 function FeaturedProject({ project }: any) {
-  const { title, desc, tech, link } = project;
+  const { title, description, tech, link, video } = project;
 
   return (
     <div className="card">
@@ -10,7 +10,7 @@ function FeaturedProject({ project }: any) {
               {title}
             </a>
           </h2>
-          <p className="fproject-desc">{desc}</p>
+          <p className="fproject-desc">{description}</p>
           <ul className="fptech-list">
             {tech.map((tech: string, index: number) => (
               <li key={index}>{tech}</li>
@@ -28,11 +28,14 @@ function FeaturedProject({ project }: any) {
           </span>
         </div>
         <div className="right-container">
-          <img
-            className="fproject-image"
-            src="https://via.placeholder.com/300"
-            alt=""
-          />
+          <video
+            className="fproject-video"
+            src={video}
+            autoPlay
+            loop
+            muted
+            controls
+          ></video>
         </div>
       </div>
     </div>
