@@ -50,6 +50,7 @@ export const projects = {
       tech: ['HTML', 'CSS', 'Figma'],
       repo: 'https://github.com/TonyHansord/FM-Challenges/tree/master/four-card-feature-section',
       link: 'https://four-card-section-tonyhansord.vercel.app',
+      img: '../assets/four-card-section.png',
     },
     {
       id: 4,

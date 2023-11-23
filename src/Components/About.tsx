@@ -2,7 +2,7 @@ import { SkillsList } from './Skills';
 
 export function About() {
   return (
-    <div className="about-container">
+    <div id='about' className="about-container">
       <img className="tony-img" src="assets/tony-head-bw.jpg" alt="Tony" />
       <div className="heading-container">
         <h1 className="name">Hello! I am Tony.</h1>
