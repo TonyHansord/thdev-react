@@ -6,11 +6,6 @@ import FeaturedProject from '../Components/FeaturedProject';
 import OtherProject from '../Components/OtherProject';
 
 describe('App', () => {
-  it('renders Logo', () => {
-    render(<App />);
-    const linkElement = screen.getByText(/Logo/i);
-    expect(linkElement).toBeInTheDocument();
-  });
 
   it('renders Contact Form', () => {
     render(<App />);

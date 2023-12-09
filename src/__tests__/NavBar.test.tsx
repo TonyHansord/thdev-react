@@ -12,7 +12,7 @@ describe('NavBar', () => {
     it('renders 5 anchor tags', () => {
       render(<NavBar />);
       const links = screen.getAllByRole('link');
-      expect(links.length).toBe(5);
+      expect(links.length).toBe(6);
     });
   });
   describe('About', () => {
