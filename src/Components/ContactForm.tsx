@@ -25,6 +25,9 @@ function ContactForm() {
     })
       .then((res) => res.json())
       .then((data) => {
+
+        console.log(data)
+
         setResult({
           success: true,
           message: data,
@@ -35,12 +38,6 @@ function ContactForm() {
           message: '',
         });
       })
-      .catch(() => {
-        setResult({
-          success: false,
-          message: 'Something went wrong. Try again later',
-        });
-      });
   };
 
   const onInputChange = (event: any) => {
@@ -85,7 +82,7 @@ function ContactForm() {
                   type="email"
                   name="email"
                   value={state.email}
-                  //   className="form-control"
+                  className="form-control"
                   onChange={onInputChange}
                   id="email"
                   placeholder="Enter your email"
@@ -111,7 +108,7 @@ function ContactForm() {
             </div>
           </div>
           <div className="bottom-container">
-            <button className="border-1 border-black rounded" type="submit">
+            <button className="contact-submit-btn" type="submit">
               Submit
             </button>
           </div>

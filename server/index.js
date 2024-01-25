@@ -31,9 +31,8 @@ function sendEmail({ email, name, message }) {
     transporter.sendMail(mailOptions, function (error, info) {
       if (error) {
         console.log(error);
-        return reject({ message: `An error has occured` });
+        return reject(new Error(`An error has occurred`));
       }
-      return resolve({ message: 'Email sent succesfuly' });
     });
   });
 }

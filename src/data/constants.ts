@@ -35,6 +35,17 @@ export const projects = {
         video: '../assets/FindThatShow-preview.webm',
       }
     },
+    {
+      title: 'Game collection app',
+      desc: 'Proof of concept web app front-end made with React, as part of software engineering bootcamp. User can add games to their collection, and view details about each game.',
+      tech: ['HTML', 'CSS', 'React', 'Javascript'],
+      repo: 'https://github.com/TonyHansord/phase-2-game-collectors-app',
+      link: 'https://game-collect.netlify.app',
+      media: {
+        hasVideo: false,
+        image: '../assets/game-collect.png',
+      }
+    },
 
   ],
   other: [
