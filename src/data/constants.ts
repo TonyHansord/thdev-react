@@ -43,7 +43,7 @@ export const projects = {
       link: 'https://game-collect.netlify.app',
       media: {
         hasVideo: false,
-        image: '../assets/game-collect.png',
+        image: '../assets/game-collect.jpg',
       }
     },
 

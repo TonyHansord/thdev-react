@@ -5,6 +5,7 @@ import Section from './Components/Section';
 import NavBar from './Components/NavBar';
 import { Projects } from './Components/Projects';
 import { About } from './Components/About';
+import { ThankYouModal } from './Components/ThankYouModal';
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
       <Section id="contact-section" backgroundColor="dark-section">
         <ContactForm />
       </Section>
+      <ThankYouModal />
     </>
   );
 }

@@ -1,7 +1,7 @@
 function FeaturedProject ({ project }: any) {
   const { title, description, tech, link, media } = project
 
-  const {hasVideo, video, image} = media
+  const { hasVideo, video, image } = media
 
   console.log(media)
 
@@ -36,7 +36,6 @@ function FeaturedProject ({ project }: any) {
             <video
               className='fproject-video'
               src={video}
-              autoPlay
               loop
               muted
               controls
