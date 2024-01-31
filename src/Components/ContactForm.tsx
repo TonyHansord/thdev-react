@@ -1,6 +1,10 @@
 import React, { useState } from 'react'
 
-function ContactForm () {
+export interface ContactFormProps {
+  openModal: () => void
+}
+
+const ContactForm: React.FC<ContactFormProps> = ({ openModal }) => {
   const [state, setState] = useState({
     name: '',
     email: '',
@@ -10,7 +14,7 @@ function ContactForm () {
   const sendEmail = async (event: React.SyntheticEvent) => {
     event.preventDefault()
 
-    console.log('submitted')
+    openModal()
     await fetch('/send', {
       method: 'POST',
       headers: {
@@ -40,7 +44,7 @@ function ContactForm () {
   }
 
   return (
-    <div className='container mx-auto px-4 border-2 border-black rounded'>
+    <div className='container mx-auto px-4 border-2 rounded'>
       <div className='contact-heading-container'>
         <h2 className='section-heading'>Want to get in touch?</h2>
       </div>

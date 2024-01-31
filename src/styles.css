@@ -1,11 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
 
 :root {
-  --light-primary: #9ff7cd;
-  --light-primary-translucent: rgba(159, 247, 205, 0.808);
-  --light-secondary: #a6ffd4;
-  --dark-primary: rgb(51, 57, 84);
-  --dark-secondary: #4c547c;
+  --light-primary: #32bcc1;
+  --light-primary-translucent: rgba(50, 188, 193, 0.85);
+  --light-secondary: #d9b310;
+  --dark-primary: #0b3c5d;
+  --dark-secondary: #1d2731;
   --dark-accent: #d3d8f1;
   --primary-font: 'Ubuntu', sans-serif;
   --border-radius: 9px;
@@ -79,6 +79,10 @@ h3 {
   font-size: 2rem;
 }
 
+section {
+  position: relative;
+}
+
 .section-heading {
   font-size: 2rem;
   text-align: center;
@@ -97,6 +101,14 @@ h3 {
   background-color: var(--dark-primary);
   color: var(--light-secondary);
   padding: 4rem 2rem;
+}
+
+.container {
+  width: 80vw;
+  margin: 0 auto;
+  background-color: var(--dark-secondary);
+  color: var(--light-primary);
+  border: var(--light-secondary) solid 2px;
 }
 
 /* navbar styles */
@@ -160,7 +172,7 @@ nav .dropdown {
 
 .tony-img {
   border-radius: 50%;
-  border: 5px solid var(--light-primary);
+  border: 5px solid var(--light-secondary);
   width: 25vw;
   height: 25vw;
 }
@@ -249,12 +261,10 @@ nav .dropdown {
 }
 
 .grid.featured .card-content > div {
-  padding: 1rem;
   width: 50%;
 }
 
 .grid.featured .card-content > div:first-child {
-  padding: 4rem;
   gap: 2rem;
 }
 .grid.other {
@@ -293,6 +303,18 @@ nav .dropdown {
 .grid.featured .card:last-child img {
   background-color: #202d4b;
   padding: 1rem;
+}
+
+.card-content .left-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  position: relative;
+  gap: 1rem;
+  height: 100%;
+  width: 100%;
+  padding: 2rem;
+  font-weight: 300;
 }
 
 .card-content .left-container h2 {
@@ -439,7 +461,7 @@ footer p {
 .form-control {
   color: var(--dark-accent);
   border-radius: 5px;
-  border: 2px solid var(--light-primary);
+  border: 2px solid var(--light-secondary);
   padding: 0.5rem;
   background-color: var(--dark-primary);
 }
@@ -455,6 +477,7 @@ footer p {
   padding: 0.5rem 2rem;
   border: var(--light-secondary) solid 1px;
   border-radius: var(--border-radius);
+  color: var(--light-secondary);
 }
 
 #message {

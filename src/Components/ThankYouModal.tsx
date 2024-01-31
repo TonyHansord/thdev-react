@@ -1,10 +1,18 @@
-export function ThankYouModal () {
+import React from 'react'
+import Modal from './Modal/Modal'
+
+export interface ThankYouModalProps {
+  isOpen: boolean
+  onClose?: () => void
+}
+
+const ThankYouModal: React.FC<ThankYouModalProps> = ({ isOpen, onClose }) => {
   return (
-    <div className='modal'>
-      <div className='modal-content'>
-        <h1>Thank you for your submission!</h1>
-        <p>We will be in touch with you shortly.</p>
-      </div>
-    </div>
+    <Modal isOpen={isOpen} hasCloseBtn={true} onClose={onClose}>
+      <h1 className='modal-header'>Thank you for your message!</h1>
+      <p className='modal-body'>I will get back to you as soon as possible.</p>
+    </Modal>
   )
 }
+
+export default ThankYouModal

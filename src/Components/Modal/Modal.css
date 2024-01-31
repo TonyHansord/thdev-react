@@ -1,0 +1,62 @@
+.modal {
+  position: fixed;
+  top: auto;
+  left: 50%;
+  right: auto;
+  bottom: 50%;
+  transform: translate(-50%, 50%);
+  padding: 2rem;
+  border: 1px solid var(--light-primary);
+  background-color: var(--dark-primary);
+  border-radius: 0.5rem;
+  box-shadow: 0 0 0.5rem 0.25rem hsl(0 0% 0% / 10%);
+  flex-direction: column;
+  align-items: stretch;
+  color: var(--light-primary);
+}
+
+.modal-header {
+  display: flex;
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.modal-body {
+  flex-grow: 1;
+  display: flex;
+  padding: 20px;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.modal-close-btn {
+  font-size: 1em;
+  background-color: var(--dark-primary);
+  width: 100%;
+  padding: 0.5em;
+  border-radius: 0.5em;
+  border: 1px solid var(--light-primary);
+  color: var(--light-primary);
+}
+
+input[type='text'],
+input[type='email'],
+input[type='password'],
+button {
+  padding: 0.5em;
+  font: inherit;
+  line-height: 1;
+}
+
+button {
+  cursor: pointer;
+}
+
+.modal::backdrop {
+  background: hsl(0 0% 0% / 50%);
+}

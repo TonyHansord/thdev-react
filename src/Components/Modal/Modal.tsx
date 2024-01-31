@@ -38,12 +38,13 @@ const Modal: FC<ModalProps> = ({ isOpen, hasCloseBtn, onClose, children }) => {
 
   return (
     <dialog ref={modalRef} className='modal' onKeyDown={handleKeyDown}>
+      {children}
+
       {hasCloseBtn && (
         <button className='modal-close-btn' onClick={handleClose}>
           Close
         </button>
       )}
-      {children}
     </dialog>
   )
 }
