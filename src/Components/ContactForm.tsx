@@ -15,7 +15,7 @@ const ContactForm: React.FC<ContactFormProps> = ({ openModal }) => {
     event.preventDefault()
 
     openModal()
-    await fetch('/send', {
+    await fetch('https://thdev-mail.onrender.com/send', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
