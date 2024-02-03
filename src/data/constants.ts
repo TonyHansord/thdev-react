@@ -27,12 +27,13 @@ export const projects = {
     },
     {
       title: 'Find that Show',
-      description: 'App front end made with HTML, CSS and JS, as part of software engineering bootcamp. User can search for TV shows, and view details about each show. Fetches data from the TV Maze API.',
+      description:
+        'App front end made with HTML, CSS and JS, as part of software engineering bootcamp. User can search for TV shows, and view details about each show. Fetches data from the TV Maze API.',
       tech: ['HTML', 'CSS', 'Javascript'],
       link: 'https://findthatshow.netlify.app',
       media: {
         hasVideo: true,
-        video: '../assets/FindThatShow-preview.webm',
+        video: '../assets/FindThatShow-preview.webm'
       }
     },
     {
@@ -43,10 +44,9 @@ export const projects = {
       link: 'https://game-collect.netlify.app',
       media: {
         hasVideo: false,
-        image: '../assets/game-collect.jpg',
+        image: '../assets/game-collect.jpg'
       }
-    },
-
+    }
   ],
   other: [
     {
@@ -159,5 +159,30 @@ export const skills = [
   {
     name: 'Swift',
     icon: 'fab fa-swift'
+  }
+]
+
+export const navlinks = [
+  {
+    label: 'About',
+    href: '#about-section'
+  },
+  {
+    label: 'Projects',
+    href: '#projects-section'
+  },
+  {
+    label: 'Contact',
+    href: '#contact-section'
+  },
+  {
+    label: 'Blog',
+    href: 'https://medium.com/@tonychansord',
+    isExternal: true
+  },
+  {
+    label: 'Resume',
+    href: 'https://tonyhansord.github.io/markdown-cv/',
+    isExternal: true
   }
 ]
