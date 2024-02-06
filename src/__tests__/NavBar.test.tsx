@@ -1,5 +1,6 @@
 import { render, screen } from '@testing-library/react'
 import NavBar from '../Components/NavBar/NavBar'
+import React from 'react'
 
 describe('NavBar', () => {
   describe('Nav', () => {

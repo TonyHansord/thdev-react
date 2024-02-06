@@ -1,3 +1,4 @@
+import React from 'react'
 import { ProjectTechItem } from './ProjectTechItem'
 
 export default function OtherProject ({ project }: any) {

@@ -1,0 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
+@import 'variables';
+@import 'reset';
+@import 'universal';
+@import '../Components/Section/_section.scss';
+@import '../Components/NavBar/_navbar.scss';
+@import '../Components/About/_about.scss';
+@import '../Components/Project/_project.scss';
+@import '../Components/Contact/_contact.scss';
+
+/* Styles for the modal */
+@import '../Components/Modal/_modal.scss';

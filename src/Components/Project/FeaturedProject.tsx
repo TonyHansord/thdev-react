@@ -1,3 +1,4 @@
+import React from 'react'
 import { ProjectTechItem } from './ProjectTechItem'
 
 function FeaturedProject ({ project }: any) {
@@ -35,7 +36,7 @@ function FeaturedProject ({ project }: any) {
             target='_blank'
             rel='noreferrer'
           >
-            <i className="fa-solid fa-arrow-up-right-from-square"></i>
+            <i className='fa-solid fa-arrow-up-right-from-square'></i>
           </a>
         </span>
       </div>

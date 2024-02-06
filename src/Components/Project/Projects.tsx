@@ -1,7 +1,8 @@
 import FeaturedProject from './FeaturedProject'
 import OtherProject from './OtherProject'
-import { projects } from '../data/constants'
+import { projects } from '../../data/constants'
 import { useCallback } from 'react'
+import React from 'react'
 
 export function Projects () {
   const renderFeatured = useCallback(() => {

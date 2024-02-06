@@ -693,9 +693,9 @@ footer p {
     padding: 2rem;
   }
 
-  .grid.featured .card-content > div {
+  /* .grid.featured .card-content > div {
     width: auto;
-  }
+  } */
 
   .grid.featured .card:nth-child(even) .card-content {
     text-align: left;

@@ -1,7 +1,8 @@
 import { render, screen } from '@testing-library/react'
 import { projects } from '../data/constants'
-import FeaturedProject from '../Components/FeaturedProject'
-import OtherProject from '../Components/OtherProject'
+import FeaturedProject from '../Components/Project/FeaturedProject'
+import OtherProject from '../Components/Project/OtherProject'
+import React from 'react'
 
 describe('App', () => {})
 

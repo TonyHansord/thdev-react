@@ -1,5 +1,5 @@
 import React, { useRef, useState } from 'react'
-import { Toggler } from '../Toggler'
+import { Toggler } from './Toggler'
 import { NavBarLink } from './NavBarLink'
 import { navlinks } from '../../data/constants'
 
@@ -39,7 +39,7 @@ const NavBar = () => {
         <ul
           id='nav-list'
           ref={navList}
-          className=' flex hidden justify-between p-4'
+          className=' flex hidden justify-between p4'
         >
           {renderLinks()}
         </ul>

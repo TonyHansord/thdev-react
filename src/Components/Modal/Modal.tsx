@@ -1,5 +1,4 @@
-import { useState, FC, useRef, useEffect } from 'react'
-import './Modal.css'
+import React, { useState, FC, useRef, useEffect } from 'react'
 
 interface ModalProps {
   isOpen: boolean

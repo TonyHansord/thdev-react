@@ -1,0 +1,135 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  font-family: "Ubuntu", sans-serif;
+  text-decoration: none;
+}
+
+.p4 {
+  padding: 4px;
+}
+
+button {
+  cursor: pointer;
+}
+
+nav {
+  position: fixed;
+  z-index: 1;
+  width: 100vw;
+  background-color: rgba(50, 188, 193, 0.85);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  color: #0b3c5d;
+}
+nav #logo-container {
+  display: flex;
+  width: 66%;
+}
+nav #logo {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+nav #logo p {
+  width: 100%;
+  font-size: 1.5rem;
+}
+nav #logo img {
+  width: 3rem;
+  border-radius: 9px;
+  border: #23db99 solid 1px;
+}
+nav .dropdown {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#nav-list {
+  display: flex;
+  padding: 0;
+}
+#nav-list li {
+  width: 100px;
+  text-align: center;
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+  transition: background-color 0.5s;
+}
+#nav-list li a {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#nav-list li:hover {
+  background-color: var(--dark-secondary);
+  color: var(--light-primary);
+}
+#nav-list .dropdown-content a {
+  padding: 1rem;
+}
+#nav-list .dropdown-content a:last-child {
+  padding: 0.5rem 2rem;
+  text-align: center;
+}
+
+/* Styles for the modal */
+.modal {
+  position: fixed;
+  top: auto;
+  left: 50%;
+  right: auto;
+  bottom: 50%;
+  transform: translate(-50%, 50%);
+  padding: 2rem;
+  border: 1px solid var(--light-primary);
+  background-color: var(--dark-primary);
+  border-radius: 0.5rem;
+  box-shadow: 0 0 0.5rem 0.25rem hsla(0, 0%, 0%, 0.1);
+  flex-direction: column;
+  align-items: stretch;
+  color: var(--light-primary);
+}
+
+.modal-header {
+  display: flex;
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.modal-body {
+  flex-grow: 1;
+  display: flex;
+  padding: 20px;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.modal-close-btn {
+  font-size: 1em;
+  background-color: var(--dark-primary);
+  width: 100%;
+  padding: 0.5em;
+  border-radius: 0.5em;
+  border: 1px solid var(--light-primary);
+  color: var(--light-primary);
+}
+
+.modal::backdrop {
+  background: hsla(0, 0%, 0%, 0.5);
+}
+
+/*# sourceMappingURL=main.css.map */
