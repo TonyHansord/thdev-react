@@ -39,7 +39,7 @@ const NavBar = () => {
         <ul
           id='nav-list'
           ref={navList}
-          className=' flex hidden justify-between p4'
+          className='hidden'
         >
           {renderLinks()}
         </ul>

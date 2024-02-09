@@ -6,13 +6,13 @@
   bottom: 50%;
   transform: translate(-50%, 50%);
   padding: 2rem;
-  border: 1px solid var(--light-primary);
-  background-color: var(--dark-primary);
+  border: 1px solid $light-secondary;
+  background-color: $dark-secondary;
   border-radius: 0.5rem;
   box-shadow: 0 0 0.5rem 0.25rem hsl(0 0% 0% / 10%);
   flex-direction: column;
   align-items: stretch;
-  color: var(--light-primary);
+  color: $light-secondary;
 }
 
 .modal-header {
@@ -32,16 +32,17 @@
   flex-direction: column;
   justify-content: flex-end;
   align-items: center;
+  font-family: $secondary-font;
 }
 
 .modal-close-btn {
   font-size: 1em;
-  background-color: var(--dark-primary);
+  background-color: $light-secondary;
   width: 100%;
   padding: 0.5em;
   border-radius: 0.5em;
-  border: 1px solid var(--light-primary);
-  color: var(--light-primary);
+  border: 1px solid $dark-secondary;
+  color: $dark-secondary;
 }
 
 .modal::backdrop {

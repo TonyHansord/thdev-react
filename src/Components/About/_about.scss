@@ -1,0 +1,112 @@
+#about {
+  width: 80vw;
+  padding: 4rem 1rem;
+  margin: 0 auto;
+}
+
+.tony-img {
+  border-radius: 50%;
+  border: 5px solid $light-secondary;
+  width: 25vw;
+  height: 25vw;
+}
+
+.sub-heading {
+  font-size: 2.5rem;
+  font-family: $secondary-font;
+  text-align: center;
+}
+
+.about-container {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+.about-container .heading-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1rem 2rem;
+  width: 100%;
+}
+.about-container .heading-container .sub-heading {
+  font-size: 1.5rem;
+  text-align: left;
+}
+
+.name {
+  font-size: 4rem;
+}
+
+.about-me {
+  padding: 2rem 0;
+  font-size: 1rem;
+  font-family: $secondary-font;
+  font-weight: lighter;
+  color: $light-primary-translucent;
+}
+
+#skills-wrapper {
+  display: flex;
+  gap: 1rem;
+  justify-content: flex-start;
+  text-align: left;
+}
+
+#skills-heading {
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.skills-list {
+  list-style: none;
+  color: $light-primary-translucent;
+
+  li {
+    display: flex;
+    align-items: center;
+    padding: 0.5rem 0;
+    font-family: $secondary-font;
+  }
+}
+
+.icon {
+  color: $light-secondary;
+  font-size: 1rem;
+  padding-right: 20px;
+  width: 1rem;
+}
+
+@media (max-width: 850px) {
+  #about {
+    justify-content: center;
+  }
+  .about-container {
+    flex-direction: column;
+    align-items: center;
+    padding: 3rem 0;
+  }
+  .about-container .tony-img {
+    width: 33vw;
+    height: 33vw;
+  }
+
+  .about-container .heading-container {
+    padding: 1rem;
+    text-align: center;
+  }
+  .about-container .heading-container .name {
+    font-size: 3rem;
+  }
+  .about-container .heading-container .sub-heading {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  #skills-wrapper {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    text-align: left;
+  }
+}

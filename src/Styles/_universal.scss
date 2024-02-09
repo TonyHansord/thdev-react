@@ -1,7 +1,38 @@
-.p4 {
-  padding: 4px;
+    button {
+  cursor: pointer;
 }
 
-button {
+a,
+a:visited,
+a:hover,
+a:active {
+  color: inherit;
+}
+
+div .btn {
+  background-color: $dark-primary;
+  font-family: $primary-font;
+  font-size: 1rem;
+  color: $light-secondary;
+  border-radius: $border-radius;
+  border-style: solid;
+  border-color: $light-primary;
   cursor: pointer;
+  width: 100%;
+}
+
+div .btn:hover {
+  background-color: $dark-secondary;
+}
+
+h3 {
+  font-size: 2rem;
+}
+
+.container {
+  width: 80vw;
+  margin: 0 auto;
+  background-color: $dark-secondary;
+  color: $light-primary;
+  border: $light-secondary solid 2px;
 }

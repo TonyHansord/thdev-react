@@ -58,7 +58,10 @@ export const projects = {
       tech: ['HTML', 'CSS', 'Bootstrap'],
       repo: 'https://github.com/TonyHansord/FM-Challenges/tree/master/NFT-element',
       link: 'https://nft-element-tonyhansord.vercel.app',
-      img: '../assets/nft-element.jpg'
+      media: {
+        hasVideo: false,
+        image: '../assets/nft-element.jpg'
+      }
     },
     {
       id: 2,
@@ -69,7 +72,10 @@ export const projects = {
       tech: ['HTML', 'CSS'],
       repo: 'https://github.com/TonyHansord/FrontEndMentorChallenges/tree/master/product-preview-card-component',
       link: 'https://product-preview-card-tonyhansord.vercel.app/',
-      img: '../assets/product-preview-card.png'
+      media: {
+        hasVideo: false,
+        image: '../assets/product-preview-card.png'
+      }
     },
     {
       id: 3,
@@ -80,7 +86,10 @@ export const projects = {
       tech: ['HTML', 'CSS', 'Figma'],
       repo: 'https://github.com/TonyHansord/FM-Challenges/tree/master/four-card-feature-section',
       link: 'https://four-card-section-tonyhansord.vercel.app',
-      img: '../assets/four-card-section.png'
+      media: {
+        hasVideo: false,
+        image: '../assets/four-card-section.png'
+      }
     },
     {
       id: 4,
@@ -91,7 +100,10 @@ export const projects = {
       tech: ['HTML', 'CSS', 'Javascript'],
       repo: 'https://github.com/TonyHansord/FM-Challenges/tree/time-tracker/time-tracking-dashboard',
       link: 'https://tonyhansord-time-tracker.netlify.app',
-      img: '../assets/time-tracker.png'
+      media: {
+        hasVideo: false,
+        image: '../assets/time-tracker.png'
+      }
     },
     {
       id: 5,
@@ -102,7 +114,10 @@ export const projects = {
       tech: ['HTML', 'CSS', 'Sass'],
       repo: 'https://github.com/TonyHansord/FrontEndMentorChallenges/tree/master/skilled-elearning-landing-page',
       link: 'https://tonyhansord-elearning-landing-page.netlify.app',
-      img: '../assets/elearning-landing-page.png'
+      media: {
+        hasVideo: false,
+        image: '../assets/elearning-landing-page.png'
+      }
     }
   ]
 }

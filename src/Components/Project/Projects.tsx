@@ -1,28 +1,21 @@
-import FeaturedProject from './FeaturedProject'
-import OtherProject from './OtherProject'
+import { Project } from './Project'
 import { projects } from '../../data/constants'
 import { useCallback } from 'react'
-import React from 'react'
+import { SectionHeading } from '../Section/SectionHeading'
 
 export function Projects () {
-  const renderFeatured = useCallback(() => {
-    return projects.featured.map((project, index) => (
-      <FeaturedProject key={index} project={project} />
-    ))
-  }, [])
-
-  const renderOther = useCallback(() => {
-    return projects.other.map((project, index) => (
-      <OtherProject key={index} project={project} />
+  const renderProjects = useCallback((type: any[]) => {
+    return type.map((project, index) => (
+      <Project key={index} project={project} />
     ))
   }, [])
 
   return (
-    <div id='card-container'>
-      <h2 className='section-heading'>Featured Projects</h2>
-      <div className='featured grid'>{renderFeatured()}</div>
-      <h2 className='section-heading'>Other Projects</h2>
-      <div className='other grid'>{renderOther()}</div>
+    <div className='project-container'>
+      <SectionHeading heading='Featured Projects' />
+      <div id='featured'>{renderProjects(projects.featured)}</div>
+      <SectionHeading heading='Other Projects' />
+      <div id='other'>{renderProjects(projects.other)}</div>
     </div>
   )
 }

@@ -8,7 +8,7 @@ type NavBarLinkProps = {
 
 export const NavBarLink = ({ href, isExternal, label }: NavBarLinkProps) => {
   return (
-    <li className='text-xl'>
+    <li>
       {isExternal ? (
         <a href={href} target='_blank' rel='noreferrer'>
           {label}

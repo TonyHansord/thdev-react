@@ -1,0 +1,38 @@
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 80vw;
+  margin: 0 auto;
+  gap: 0.5rem;
+  border-radius: 10px;
+  background-color: transparent;
+  padding: 0.2rem;
+
+  button {
+    background-color: $light-secondary;
+    color: $dark-primary;
+    font-size: 1rem;
+    font-family: $secondary-font;
+    border-radius: 10px;
+    border: none;
+    padding: 0.5rem;
+  }
+}
+
+.form-control {
+  color: $dark-accent;
+  border-radius: 10px;
+  border: 1px solid $light-secondary;
+  font-family: $secondary-font;
+  padding: 0.5rem;
+  background-color: transparent;
+
+  &::placeholder {
+    color: $light-secondary-translucent;
+  }
+}
+
+#message {
+  height: 7rem;
+}
