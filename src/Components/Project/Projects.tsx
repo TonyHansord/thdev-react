@@ -13,9 +13,11 @@ export function Projects () {
   return (
     <div className='project-container'>
       <SectionHeading heading='Featured Projects' />
-      <div id='featured'>{renderProjects(projects.featured)}</div>
+      <div id='featured' data-testid='featured'>
+        {renderProjects(projects.featured)}
+      </div>
       <SectionHeading heading='Other Projects' />
-      <div id='other'>{renderProjects(projects.other)}</div>
+      <div id='other' data-testid='other'>{renderProjects(projects.other)}</div>
     </div>
   )
 }

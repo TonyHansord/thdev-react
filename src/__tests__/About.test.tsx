@@ -11,6 +11,13 @@ describe('About', () => {
     expect(name).toBeInTheDocument()
   })
 
+  it('renders Avatar', () => {
+    render(<About />)
+    const avatar = screen.getByRole('img')
+    expect(avatar).toBeInTheDocument()
+  }
+  )
+
   it('has a list of skills', () => {
     render(<About />)
     const skills = screen.getAllByRole('list')

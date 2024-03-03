@@ -6,6 +6,7 @@ import NavBar from './Components/NavBar/NavBar'
 import { Projects } from './Components/Project/Projects'
 import { About } from './Components/About/About'
 import ThankYouModal from './Components/Modal/ThankYouModal'
+import SocialBar from './Components/Social/SocialBar'
 
 function App () {
   const [isModalOpen, setIsModalOpen] = useState<boolean>(false)
@@ -31,6 +32,7 @@ function App () {
       </Section>
       <Section id='contact-section' backgroundColor='dark-section'>
         <ContactForm openModal={handleModalOpen} />
+        <SocialBar />
         <ThankYouModal isOpen={isModalOpen} onClose={handleModalClose} />
       </Section>
     </>

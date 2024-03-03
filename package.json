@@ -2,8 +2,13 @@
   "name": "thdev",
   "version": "0.1.0",
   "private": true,
-  "transformIgnorePatterns": ["node_modules/(?!axios)/"],
+  "transformIgnorePatterns": [
+    "node_modules/(?!axios)/"
+  ],
   "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^6.5.1",
+    "@fortawesome/free-solid-svg-icons": "^6.5.1",
+    "@fortawesome/react-fontawesome": "^0.2.0",
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
@@ -23,7 +28,7 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "npm install && react-scripts build",
-    "test": "react-scripts test",
+    "test": "react-scripts test --verbose=true",
     "eject": "react-scripts eject",
     "start-server": "node server/index.js",
     "start-app": "npm run build && npm run start-server"
@@ -59,5 +64,4 @@
       "axios": "axios/dist/node/axios.cjs"
     }
   }
-  
 }
