@@ -6,6 +6,7 @@ interface ProjectProps {
     title: string
     description: string
     tech: string[]
+    repo: string
     link: string
     media: {
       hasVideo: boolean
@@ -16,7 +17,7 @@ interface ProjectProps {
 }
 
 export const Project = ({ project }: ProjectProps) => {
-  const { title, description, tech, link, media } = project
+  const { title, description, tech, repo, link, media } = project
 
   const { hasVideo, video, image } = media
 
@@ -47,6 +48,12 @@ export const Project = ({ project }: ProjectProps) => {
         </div>
       </div>
       <div className='card-links'>
+        {repo ? (
+          <a href={repo} target='_blank' rel='noreferrer'>
+            <i className='fab fa-github'></i>
+          </a>
+        ) : null}
+
         <a className='live-site' href={link} target='_blank' rel='noreferrer'>
           <i className='fa-solid fa-arrow-up-right-from-square'></i>
         </a>

@@ -8,6 +8,10 @@
   text-decoration: none;
 }
 
+body {
+  background-color: #1d2731;
+}
+
 button {
   cursor: pointer;
 }
@@ -483,6 +487,13 @@ video {
   height: 100%;
 }
 
+.card-links {
+  display: flex;
+  gap: 1rem;
+  justify-content: flex-start;
+  align-items: center;
+}
+
 @media (max-width: 850px) {
   #featured,
   #other {
@@ -595,6 +606,30 @@ video {
 
 #message {
   height: 7rem;
+}
+
+#social-section {
+  display: flex;
+  padding: 50px 0;
+  text-align: center;
+  justify-content: center;
+}
+
+#social-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 500px;
+  font-size: 2rem;
+}
+#social-bar i {
+  font-size: 2rem;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+#social-bar i:hover {
+  color: #32bcc1;
 }
 
 /* Styles for the modal */

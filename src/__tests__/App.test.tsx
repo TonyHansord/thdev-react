@@ -1,7 +1,5 @@
 import { render, screen } from '@testing-library/react'
 import { projects } from '../data/constants'
-import App from '../App'
-import React from 'react'
 import { Projects } from '../Components/Project/Projects'
 
 describe('App', () => {

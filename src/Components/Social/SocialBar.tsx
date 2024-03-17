@@ -4,7 +4,7 @@ export default function SocialBar () {
   return (
     <footer id='social-bar' role='navigation'>
       <SocialIcon
-        link='www.linkedin.com/in/thdev'
+        link='https://www.linkedin.com/in/thdev'
         iconClass='fa-brands fa-linkedin'
       />
       <SocialIcon
@@ -19,8 +19,6 @@ export default function SocialBar () {
         link='https://www.youtube.com/@tonyhansorddev'
         iconClass='fab fa-youtube'
       />
-
-      
     </footer>
   )
 }

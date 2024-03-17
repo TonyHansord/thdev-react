@@ -6,6 +6,7 @@ export const projects = {
       description:
         'Full-stack Inventory Management app, built with JavaScript and React for the frontend and Ruby on Rails with PostgreSQL, for the backend.',
       tech: ['React', 'Ruby on Rails', 'PostgreSQL'],
+      repo: 'https://github.com/TonyHansord/SalesPick',
       link: 'https://salespick.onrender.com',
       media: {
         hasVideo: true,
@@ -30,6 +31,7 @@ export const projects = {
       description:
         'App front end made with HTML, CSS and JS, as part of software engineering bootcamp. User can search for TV shows, and view details about each show. Fetches data from the TV Maze API.',
       tech: ['HTML', 'CSS', 'Javascript'],
+      repo: 'https://github.com/TonyHansord/Phase-1-Project',
       link: 'https://findthatshow.netlify.app',
       media: {
         hasVideo: true,
@@ -38,7 +40,7 @@ export const projects = {
     },
     {
       title: 'Game collection app',
-      desc: 'Proof of concept web app front-end made with React, as part of software engineering bootcamp. User can add games to their collection, and view details about each game.',
+      description: 'Proof of concept web app front-end made with React, as part of software engineering bootcamp. User can add games to their collection, and view details about each game.',
       tech: ['HTML', 'CSS', 'React', 'Javascript'],
       repo: 'https://github.com/TonyHansord/phase-2-game-collectors-app',
       link: 'https://game-collect.netlify.app',

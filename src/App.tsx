@@ -32,8 +32,10 @@ function App () {
       </Section>
       <Section id='contact-section' backgroundColor='dark-section'>
         <ContactForm openModal={handleModalOpen} />
-        <SocialBar />
         <ThankYouModal isOpen={isModalOpen} onClose={handleModalClose} />
+      </Section>
+      <Section id='social-section' backgroundColor='dark-section'>
+        <SocialBar />
       </Section>
     </>
   )
