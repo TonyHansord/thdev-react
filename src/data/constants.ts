@@ -40,13 +40,25 @@ export const projects = {
     },
     {
       title: 'Game collection app',
-      description: 'Proof of concept web app front-end made with React, as part of software engineering bootcamp. User can add games to their collection, and view details about each game.',
+      description:
+        'Proof of concept web app front-end made with React, as part of software engineering bootcamp. User can add games to their collection, and view details about each game.',
       tech: ['HTML', 'CSS', 'React', 'Javascript'],
       repo: 'https://github.com/TonyHansord/phase-2-game-collectors-app',
       link: 'https://game-collect.netlify.app',
       media: {
         hasVideo: false,
         image: '../assets/game-collect.jpg'
+      }
+    },
+    {
+      title: 'Wedding Website',
+      description:
+        "A website built for my wife and I's wedding. Built with Godaddy's website builder.",
+      tech: ['Godaddy'],
+      link: 'https://katandtony.godaddysites.com',
+      media: {
+        hasVideo: true,
+        video: '../assets/wedding-website.webm'
       }
     }
   ],
