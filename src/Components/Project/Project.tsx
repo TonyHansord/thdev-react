@@ -10,7 +10,8 @@ interface ProjectProps {
     link: string
     media: {
       hasVideo: boolean
-      video: string
+      videoA: string
+      videoB: string
       image: string
     }
   }
@@ -19,7 +20,7 @@ interface ProjectProps {
 export const Project = ({ project }: ProjectProps) => {
   const { title, description, tech, repo, link, media } = project
 
-  const { hasVideo, video, image } = media
+  const { hasVideo, videoA, videoB, image } = media
 
   return (
     <div className='card'>
@@ -28,11 +29,13 @@ export const Project = ({ project }: ProjectProps) => {
           className='fproject-video'
           playsInline
           autoPlay
-          src={video}
           loop
           muted
           controls
-        ></video>
+        >
+          <source src={videoB} type='video/webm' />
+          <source src={videoA} type='video/mp4' />
+        </video>
       ) : (
         <img src={image} alt={title} />
       )}

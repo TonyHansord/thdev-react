@@ -10,7 +10,8 @@ export const projects = {
       link: 'https://salespick.onrender.com',
       media: {
         hasVideo: true,
-        video: '../assets/SalesPick-Preview.webm',
+        videoA: '../assets/SalesPick-Preview.mov',
+        videoB: '../assets/SalesPick-Preview.webm',
         image: ''
       }
     },
@@ -35,7 +36,9 @@ export const projects = {
       link: 'https://findthatshow.netlify.app',
       media: {
         hasVideo: true,
-        video: '../assets/FindThatShow-preview.webm'
+        videoA: '../assets/FindThatShow-preview.mov',
+        videoB: '../assets/FindThatShow-preview.webm'
+
       }
     },
     {
@@ -58,7 +61,8 @@ export const projects = {
       link: 'https://katandtony.godaddysites.com',
       media: {
         hasVideo: true,
-        video: '../assets/wedding-website.webm'
+        videoA: '../assets/wedding-website.mov',
+        videoB: '../assets/wedding-website.webm'
       }
     }
   ],
