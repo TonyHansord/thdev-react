@@ -215,7 +215,7 @@ export const navlinks = [
   },
   {
     label: 'Resume',
-    href: 'https://tonyhansord.github.io/markdown-cv/',
+    href: '../assets/Anthony Hansord Resume.pdf',
     isExternal: true
   }
 ]
